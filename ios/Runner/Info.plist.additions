@@ -1,0 +1,22 @@
+<!--
+Fragmentos a añadir manualmente en ios/Runner/Info.plist al crear el
+proyecto iOS (flutter create .). Se mantiene como .additions para no
+sobrescribir el Info.plist generado.
+-->
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Necesitamos tu ubicación para registrar tu asistencia en el campus.</string>
+
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>La app detecta tu entrada y salida del campus aunque esté en segundo plano. Solo se comparte con tu institución.</string>
+
+<key>UIBackgroundModes</key>
+<array>
+    <string>location</string>
+    <string>fetch</string>
+</array>
+
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <false/>
+</dict>

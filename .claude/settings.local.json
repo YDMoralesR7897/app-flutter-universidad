@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter --version)",
+      "Bash(flutter create *)",
+      "Bash(flutter pub *)",
+      "Bash(dart run *)",
+      "Bash(flutter analyze *)",
+      "Bash(flutter devices *)",
+      "Bash(flutter test *)",
+      "Bash(flutter build *)",
+      "Bash(flutter emulators *)",
+      "Bash(adb devices *)",
+      "Bash(grep -E \"emulator-[0-9]+\\\\s+device$\")",
+      "Bash(adb shell *)",
+      "Bash(adb install *)",
+      "Bash(adb exec-out *)",
+      "Bash(py --version)",
+      "Bash(mysql --version)",
+      "Bash(mysql -uroot -proot123 -e \"SELECT VERSION\\(\\);\")",
+      "Bash(mysql -uroot -proot123 -e \"CREATE DATABASE IF NOT EXISTS campus_checkin CHARACTER SET utf8mb4;\")",
+      "Bash(py -m venv .venv)",
+      "Bash(.venv/Scripts/pip install *)",
+      "Bash(.venv/Scripts/python seed.py)",
+      "Bash(.venv/Scripts/python -m uvicorn app.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s http://127.0.0.1:8000/health)",
+      "Bash(curl -s -X POST http://127.0.0.1:8000/auth/register -H \"Content-Type: application/json\" -d '{\"email\":\"demo@uni.edu\",\"password\":\"demo12345\",\"full_name\":\"Demo\"}')",
+      "Bash(adb uninstall *)",
+      "Bash(adb emu *)",
+      "Bash(mysql -uroot -proot123 campus_checkin -e \"SELECT u.email, c.code, ci.distance_m, ci.created_at FROM checkins ci JOIN users u ON u.id=ci.user_id JOIN classrooms c ON c.id=ci.classroom_id;\")"
+    ]
+  }
+}

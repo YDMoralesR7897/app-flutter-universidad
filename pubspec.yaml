@@ -1,0 +1,46 @@
+name: app_flutter_universidad
+description: App móvil empresarial — auth segura, sesión persistente y geolocalización optimizada.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Estado
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+
+  # DI
+  get_it: ^7.7.0
+
+  # Errores tipados
+  dartz: ^0.10.1
+
+  # Red
+  dio: ^5.7.0
+  http_certificate_pinning: ^3.0.1
+
+  # Seguridad / almacenamiento
+  flutter_secure_storage: ^9.2.2
+
+  # Geolocalización
+  geolocator: ^13.0.1
+  permission_handler: ^11.3.1
+
+  # Utilidades
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.4
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
